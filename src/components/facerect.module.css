@@ -1,0 +1,14 @@
+.box {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px rgba(255, 0, 0, 0.6) solid;
+  border-radius: 4px;
+  user-select: none;
+  pointer-events: none;
+  z-index: 999900009;
+  transition: 0.15s;
+}

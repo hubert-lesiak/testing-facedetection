@@ -1,0 +1,14 @@
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "sidebar content";
+  min-height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}

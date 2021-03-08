@@ -1,0 +1,52 @@
+.box {
+  display: flex;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.1);
+  width: 320px;
+  height: 80px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.primary {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  display: inline-block;
+  flex-basis: content;
+}
+
+.value {
+  display: inline-block;
+  flex-basis: content;
+  margin-left: auto;
+}
+
+.progress {
+  margin-top: 0.5rem;
+  flex-basis: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: blue;
+  top: 0;
+  left: 0;
+  width: var(--value, 0%);
+  height: 100%;
+}
