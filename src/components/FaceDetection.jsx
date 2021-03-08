@@ -30,6 +30,7 @@ export default function FaceDetection() {
         .then(faces => dispatch(onFrame(JSON.parse(JSON.stringify(faces)))))
         .catch(() => []);
     }
+    // eslint-disable-next-line
   }, [isPlaying, waiting]);
 
   async function getFaces() {

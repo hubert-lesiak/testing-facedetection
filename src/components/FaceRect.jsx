@@ -31,6 +31,7 @@ export default function FaceRect({ player }) {
       w: box._width * scale.x,
       h: box._height * scale.y,
     };
+    // eslint-disable-next-line
   }, [current]);
 
   const a = box();

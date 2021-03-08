@@ -104,6 +104,7 @@ export default function Charts(props) {
 
       chartRef.current = chart;
     }
+    // eslint-disable-next-line
   }, [canvasRef.current]);
 
   useEffect(() => {

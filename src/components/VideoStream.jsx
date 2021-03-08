@@ -55,6 +55,7 @@ export default function VideoStream({ onStream, children }) {
         controls
         autoPlay
         id="video"
+        muted
       ></video>
 
       {!isAllowed && (

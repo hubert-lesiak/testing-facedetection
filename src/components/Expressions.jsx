@@ -45,6 +45,7 @@ export default function Expressions(props) {
         setPrimary({ name, value: postValue });
       }
     }
+    // eslint-disable-next-line
   }, [current]);
 
   if (!current) return null;
